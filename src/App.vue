@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Hi There</h1>
+    <MyModal header="Login Successful" content="Welcome Our Pages" theme="delete"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyModal from "./components/MyModal.vue";
 
 export default {
-  name: 'App',
+  data(){
+    return{
+
+    }
+  },
   components: {
-    HelloWorld
-  }
-}
+    MyModal,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+h1{
+  color:red
 }
 </style>
