@@ -5,3 +5,4 @@ import './assets/global.css'
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+

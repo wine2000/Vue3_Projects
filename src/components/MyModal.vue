@@ -5,7 +5,7 @@
       <p class="p">{{content}}</p> -->
       <slot>default</slot>
       <slot name="Links"/>
-
+      <slot name="delete"/>
     </div>
   </div>
 </template>
@@ -44,6 +44,9 @@ export default {
 }
 .danger{
   background-color: red;
-  color:white;
+  color:black;
+}
+h1{
+  color:blue
 }
 </style>
